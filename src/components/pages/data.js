@@ -1,7 +1,7 @@
 const Data = [
     {
     id:1,
-    name: "anantnag",
+    name: "Anantnag",
     Desc1: "The town has been called by both the names Islamabad and Anantnag. The latter is characterised by Marc Aurel Stein as its Hindu name.",
     Desc2: "Anantnag also called Islamabad is the administrative headquarters of Anantnag district of Indian-administered Jammu and Kashmir in the disputed Kashmir region. It is located at a distance of 53 kilometres (33 miles) from the union territory's capital Srinagar. It is the third largest city in Jammu and Kashmir after Srinagar and Jammu with an urban agglomerate population of 159,838 and a municipal limit population of 109,433.",
     product: "Willows or Cricket Bats",

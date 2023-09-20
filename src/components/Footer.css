@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;0,800;1,200;1,500;1,600&display=swap');
 
 .footer-container {
-  background: linear-gradient(171deg, #7F9AEB -15.01%, rgba(127, 154, 235, 0.00) 93.34%);
+  background-color: #26335d;
+
   display: flex;
   padding: 40px 0px 18px 0px ;
-  color: #2539A1;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -33,7 +34,7 @@
   margin-bottom: 24px;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #211D40;
+  color: #fff;
 }
 
 .footer-input {
@@ -79,17 +80,17 @@
 }
 
 .footer-link-items > h2 {
-  color: #211D40;
+  color: #fff;
 }
 
 .footer-link-items a {
-  color: #2539A1;
+  color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
 
 .footer-link-items a:hover {
-  color: #2539A1;
+  color: #fff;
   transition: 0.3s ease-out;
 }
 
@@ -98,12 +99,12 @@
 }
 
 .footer-input::placeholder {
-  color:#2539A1;
+  color:#fff;
 }
 
 /* Social Icons */
 .social-icon-link {
-  color: #2539A1;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -129,7 +130,7 @@
 }
 
 .social-logo {
-  color: #2539A1;
+  color: #fff;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -141,7 +142,7 @@
 }
 
 .website-rights {
-  color: #2539A1;
+  color: #fff;
   margin-bottom: 16px;
 }
 

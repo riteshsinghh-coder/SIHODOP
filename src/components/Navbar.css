@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(171deg, #7694ec -15.01%, rgba(127, 154, 235, 0.00) 93.34%);
+  background-color: #26335d;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@
 }
 
 .nav-links {
-  color:#2539A1;
+  color:#fff;
   font-weight: 600;
   font-size: 1.3rem;
   display: flex;
@@ -63,7 +63,7 @@
 
 .nav-links:hover {
   text-decoration: underline;
-  color: #2539A1;
+  color: #fff;
   transition: all 0.2s ease-out;
 }
 
