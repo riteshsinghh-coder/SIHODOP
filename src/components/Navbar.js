@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import image from "../images/logo.png"
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -30,7 +29,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img class="logo-image" src={image} alt="logo" />
+            ODOP
+            <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -70,7 +70,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button class="btn--medium" buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>

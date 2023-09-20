@@ -22,14 +22,21 @@ h1 {
 }
 
 .cards__items {
+  display: flex; /* Display cards in a row */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-between; /* Distribute space evenly between cards */
   margin-bottom: 24px;
 }
 
+/* Set the width for each card to make 4 cards fit */
 .cards__item {
   display: flex;
-  flex: 1;
   margin: 0 1rem;
+  padding: 20px;
   border-radius: 10px;
+  width: calc(33.33% - 2rem); /* 33.33% width minus margins, for 3 cards in a row */
+
+  box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .cards__item__link {
@@ -107,12 +114,19 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
   .cards__items {
-    display: flex;
+    justify-content: flex-start; /* Reset justify-content for larger screens */
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+    width: calc(50% - 2rem); /* For smaller screens, make two cards fit per row */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards__item {
+    width: 100%; /* For even smaller screens, make one card per row */
   }
 }
