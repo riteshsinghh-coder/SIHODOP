@@ -5,6 +5,7 @@ import Data from '../components/pages/data';
 function ProductDetail() {
   const { name } = useParams();
 
+  console.log(name);
   // Find the product in the data array that matches the name
   const product = Data.find(product => product.name === name);
 
