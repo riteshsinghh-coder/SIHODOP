@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 // import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import image2 from "../images/MII.png"
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
         <div>
           <h3>About ODOP</h3>
           <p>The initiative aims to select, brand, and promote at least One Product from each Districtof the country for enabling holistic socioeconomic growth across all regions.</p>
+          <img src={image2} alt="make in india" />
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
@@ -35,8 +37,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              ODOP
-              <i class='fab fa-typo3' />
+            <img src='/logo.png' alt="logo" />
             </Link>
           </div>
           <small class='website-rights'>ODOP © 2023</small>

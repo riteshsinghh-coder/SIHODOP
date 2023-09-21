@@ -1,34 +1,30 @@
-// import React from 'react';
-// import { useParams } from 'react-router-dom';
-// import Data from './pages/data'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Data from '../components/pages/data'; 
 
-// function ProductDetails() {
-//   // Fetch the productId from route parameters
-//   const { productId } = useParams();
-  
-//     console.log(productId);
-//   // Sample product data (you can fetch this from an API or data source)
- 
-//     // Add more products here
-//   };
+function ProductDetail() {
+  const { name } = useParams();
 
-//   // Fetch the product details based on the productId
-//   const product = products[productId];
+  // Find the product in the data array that matches the name
+  const product = Data.find(product => product.name === name);
 
-//   // Check if the product exists
-// //   if (!product) {
-// //     return <div>Product not found</div>;
-// //   }
+  if (!product) {
+    return <div>Product not found</div>;
+  }
 
-//   // Render the product details
-//   return (
-//     <div>
-//       <h1>{product.name}</h1>
-//       <p>{product.description}</p>
-//       <p>Price: {product.price}</p>
-//       {/* You can display additional product information here */}
-//     </div>
-//   );
-// }
+  return (
+    <div>
+      <h1>{product.name}</h1>
+      <p>{product.Desc1}</p>
+      <p>{product.Desc2}</p>
+      <p>Product: {product.product}</p>
+      {/* Add more product details here */}
+      <img src={product.img1} alt={`Product: ${product.name}`} />
+      <img src={product.img2} alt={`Product: ${product.name}`} />
+      <img src={product.img3} alt={`Product: ${product.name}`} />
+      {/* You can display additional product images here */}
+    </div>
+  );
+}
 
-// export default ProductDetails;
+export default ProductDetail;
