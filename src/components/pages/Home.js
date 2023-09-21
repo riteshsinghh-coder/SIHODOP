@@ -17,7 +17,8 @@ function Home() {
             <ul className='cards__items'>
               {Data.map((item, index) => (
                 <CardItem
-                  key={index} // You should set a unique key for each CardItem
+                  key={index} 
+                  id={item.id}
                   img1={item.img1}
                   img2={item.img2}
                   img3={item.img3}

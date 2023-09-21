@@ -5,11 +5,11 @@ import "./Cards.css"
 function CardItem(props) {
  
 
-  console.log(props.img4);
+  console.log(props.id);
   return (
     <>
       <li className='cards__item'>
-      <Link className='cards__item__link' to={props.product}>
+      <Link className='cards__item__link' to={`/products/${props.name}`}>
   <figure className='cards__item__pic-wrap' data-category={props.name}>
     <img
       className='cards__item__img'
